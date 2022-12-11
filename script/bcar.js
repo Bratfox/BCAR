@@ -6,7 +6,6 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
 //sdk stuff
 
-	const modApi = bcModSdk.registerMod({
 (async function() {
     const modApi = bcModSdk.registerMod({
         name: 'BCAR',
