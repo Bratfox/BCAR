@@ -3,7 +3,7 @@
 // @namespace https://www.bondageprojects.com/
 // @version 0.3.0
 // @description BCAR Bondacge Club Auto React
-// @author DrBranestawm
+// @author DrBranestawm, Bratfox
 // @match https://bondageprojects.elementfx.com/*
 // @match https://www.bondageprojects.elementfx.com/*
 // @match https://bondage-europe.com/*
@@ -16,6 +16,6 @@
 (function() {
     'use strict';
     var script = document.createElement("script");
-    script.src = "https://drbranestawm.github.io/BCAR/script/bcar.js";
+    script.src = "https://bratfox.github.io/BCAR/script/bcar.js";
     document.head.appendChild(script);
 })();
