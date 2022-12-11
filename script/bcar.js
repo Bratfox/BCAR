@@ -31,26 +31,26 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
     const typeAction = {
         EarCaress: [
-            ["Mnyaa~", "Nnyaaaaah~", "Nnyaaaaah~", "Nnyaa~", "Nyaa~"], // sounds
+            ["Uwah~", "Uwaaaaah~", "Uwaaaah~", "Uwaah~", "Uwaaah~"], // sounds
             [" purrs softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears.", " twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears, purring loudly as " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears are toyed with.",
                 " twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears, purring loudly as " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears are toyed with.", " squirms, twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears and purrs.",
                 " wiggles and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears purring softly."
             ]
         ], // actions // order matters, match sound with action
         EarNibble: [
-            ["Mnyaa~", "Nnyaa~", "Nnyaaaaah~"],
+            ["Uwaah~", "Uwaaah~", "Uwaaaaah~"],
             [" moans softly and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's nibbled.", " wiggles and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears between the teeth.",
                 " moans softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's nibbled."
             ]
         ],
         EarLick: [
-            ["Mnyaa~", "Nnyaa~", "Nnyaaaaah~"],
+            ["Uwaah~", "Uwaaah~", "Uwaaaaah~"],
             [" moans softly and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's licked.", " wiggles and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears caused by the licking.",
                 " moans softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + "r ears as it's licked."
             ]
         ],
         EarKiss: [
-            ["Mnyaa~", "Nnyaa~", "Nnyaaaaah~"],
+            ["Uwaah~", "Uwaaah~", "Uwaaaaah~"],
             [" moans softly and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's kissed.", " wiggles and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears caused by the kissing.",
                 " moans softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's kissed."
             ]
@@ -74,7 +74,7 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             [" purrs softly and wags " + Player.BCAR.bcarSettings.genderDefault.possessive + " tail."]
         ],
         CaressButt: [
-            ["Mnyaa~"],
+            ["Uwaah~"],
             [" purrs softly, wiggles " + Player.BCAR.bcarSettings.genderDefault.possessive + " butt and wags " + Player.BCAR.bcarSettings.genderDefault.possessive + " tail."]
         ],
     }
@@ -176,16 +176,12 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
 
     function EarWiggle() {
-        console.log("Wiggle");
         if (Player.BCAR.bcarSettings.earWigglingEnable === true) {
-            console.log("Wiggle Enabled");
             let earsVariations = [Player.BCAR.bcarSettings.earsDefault.ears2, Player.BCAR.bcarSettings.earsDefault.ears1];
             let earsColor = [Player.BCAR.bcarSettings.earsDefault.earsColor2, Player.BCAR.bcarSettings.earsDefault.earsColor1];
             let numberWiggles = parseInt(Player.BCAR.bcarSettings.earsDefault.earsCount);
             let delay = parseInt(Player.BCAR.bcarSettings.earsDefault.earsDelay);
-            console.log("Wiggle Configured");
             for (let i = 0; i < numberWiggles; i++) {
-                console.log("Wiggle " + i + " Initiated");
                 setTimeout(function() {
                     InventoryWear(Player, earsVariations[i % earsVariations.length], "HairAccessory2", earsColor[i % earsColor.length]);
                     ChatRoomCharacterItemUpdate(Player, "HairAccessory2");
@@ -278,8 +274,6 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             var wagMessage = data.Content;
             let patterns = [/wags.*tail/mi, /tail.*wagging/mi, /wagging.*tail/mi]; // matches {<any> wags <any> tail <any>}
             let result = patterns.find(pattern => pattern.test(wagMessage));
-            console.log(wagMessage)
-            console.log(result)
             if (result) {
                 TailWag();
             }
@@ -289,8 +283,6 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             var wagMessage = data.Content;
             let patterns = [/wiggles.*ears/mi, /ears.*wiggling/mi, /wiggling.*ears/mi]; // matches {<any> wiggles <any> ears <any>}
             let result = patterns.find(pattern => pattern.test(wagMessage));
-            console.log(wagMessage)
-            console.log(result)
             if (result) {
                 EarWiggle();
             }
