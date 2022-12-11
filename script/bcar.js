@@ -274,6 +274,8 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             var wagMessage = data.Content;
             let patterns = [/wags.*tail/mi, /tail.*wagging/mi, /wagging.*tail/mi]; // matches {<any> wags <any> tail <any>}
             let result = patterns.find(pattern => pattern.test(wagMessage));
+            console.log(wagMessage)
+            console.log(result)
             if (result) {
                 TailWag();
             }
@@ -283,6 +285,8 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
             var wagMessage = data.Content;
             let patterns = [/wiggles.*ears/mi, /ears.*wiggling/mi, /wiggling.*ears/mi]; // matches {<any> wiggles <any> ears <any>}
             let result = patterns.find(pattern => pattern.test(wagMessage));
+            console.log(wagMessage)
+            console.log(result)
             if (result) {
                 EarWiggle();
             }
