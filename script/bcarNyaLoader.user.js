@@ -16,6 +16,6 @@
 (function() {
     'use strict';
     var script = document.createElement("script");
-    script.src = "https://bratfox.github.io/BCAR/script/bcarBeta.js";
+    script.src = "https://bratfox.github.io/BCAR/script/bcarNya.js";
     document.head.appendChild(script);
 })();
