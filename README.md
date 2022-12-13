@@ -11,18 +11,18 @@ as a bookmark on your devices.
 The commands were move the [Wiki](https://github.com/DrBranestawm/BCAR/wiki) page.
 
 # BCE Expressions for BCAR 
-If you use FBC(formerly BCE) and want special Expressions for BCAR reactions I recommend to add this addon to your list. (Requiers [FBC](https://sidiousious.gitlab.io/bce/) and [BCAR](https://github.com/DrBranestawm/BCAR#))  
-You can add the script via Tampermonkey [BCE Expressions for BCAR](https://github.com/DrBranestawm/BCAR/raw/main/bceExpressionsForBCAR/scriptLoader.user.js)  
+If you use FBC(formerly BCE) and want special Expressions for BCAR reactions I recommend to add this addon to your list. (Requires [FBC](https://sidiousious.gitlab.io/bce/) and [BCAR](https://github.com/bratfox/BCAR#))  
+You can add the script via Tampermonkey [BCE Expressions for BCAR](https://github.com/bratfox/BCAR/raw/main/bceExpressionsForBCAR/scriptLoader.user.js)  
 or add it as Bookmark any of your devices. To do that save  
-`javascript:(()=>{fetch('https://drbranestawm.github.io/BCAR/bceExpressionsForBCAR/script.js').then(r=>r.text()).then(r=>eval(r));})();` 
+`javascript:(()=>{fetch('https://bratfox.github.io/BCAR/bceExpressionsForBCAR/script.js').then(r=>r.text()).then(r=>eval(r));})();` 
 as a bookmark on your devices.
 
 
 # BCAR Beta
 Use the beta at own risk!  
-You can add the beta script via Tampermonkey [BCAR Beta](https://github.com/DrBranestawm/BCAR/raw/main/script/bcarBetaLoader.user.js)  
+You can add the beta script via Tampermonkey [BCAR Beta](https://github.com/bratfox/BCAR/raw/main/script/bcarNyaLoader.user.js)  
 or add it as Bookmark any of your devices. To do that save  
-`javascript:(()=>{fetch('https://drbranestawm.github.io/BCAR/script/bcarBeta.js').then(r=>r.text()).then(r=>eval(r));})();` 
+`javascript:(()=>{fetch('https://bratfox.github.io/BCAR/script/bcarNya.js').then(r=>r.text()).then(r=>eval(r));})();` 
 as a bookmark on your devices.
 
 
