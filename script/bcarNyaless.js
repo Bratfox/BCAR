@@ -46,7 +46,7 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
         EarLick: [
             ["", "", ""],
             [" moans softly and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's licked.", " wiggles and twitches " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears caused by the licking.",
-                " moans softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + "r ears as it's licked."
+                " moans softly, twitching " + Player.BCAR.bcarSettings.genderDefault.possessive + " ears as it's licked."
             ]
         ],
         EarKiss: [
