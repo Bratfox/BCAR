@@ -96,41 +96,49 @@ var bcModSdk=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
     function ArousalEarCaress() {
         if (Player.BCAR.bcarSettings.arousalEnable === true) {
-            Player.BCT.splitOrgasmArousal.arousalProgress = 30;
-            Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 15;
             Player.ArousalSettings.ProgressTimer = Player.ArousalSettings.Progress + 2;
-            ActivityChatRoomBCTArousalSync(Player);
             ActivityChatRoomArousalSync(Player);
+            if (Player.BCT) {
+                Player.BCT.splitOrgasmArousal.arousalProgress = 30;
+                Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 15;
+                ActivityChatRoomBCTArousalSync(Player);
+            }
         }
     }
 
     function ArousalEarNibble() {
         if (Player.BCAR.bcarSettings.arousalEnable === true) {
-            Player.BCT.splitOrgasmArousal.arousalProgress = 100;
-            Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
             Player.ArousalSettings.ProgressTimer = Player.ArousalSettings.Progress + 10;
-            ActivityChatRoomBCTArousalSync(Player);
             ActivityChatRoomArousalSync(Player);
+            if (Player.BCT) {
+                Player.BCT.splitOrgasmArousal.arousalProgress = 100;
+                Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
+                ActivityChatRoomBCTArousalSync(Player);
+            }
         }
     }
 
     function ArousalEarLick() {
         if (Player.BCAR.bcarSettings.arousalEnable === true) {
-            Player.BCT.splitOrgasmArousal.arousalProgress = 100;
-            Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
             Player.ArousalSettings.ProgressTimer = Player.ArousalSettings.Progress + 7;
-            ActivityChatRoomBCTArousalSync(Player);
             ActivityChatRoomArousalSync(Player);
+            if (Player.BCT) {
+                Player.BCT.splitOrgasmArousal.arousalProgress = 100;
+                Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
+                ActivityChatRoomBCTArousalSync(Player);
+            }
         }
     }
 
     function ArousalEarKiss() {
         if (Player.BCAR.bcarSettings.arousalEnable === true) {
-            Player.BCT.splitOrgasmArousal.arousalProgress = 100;
-            Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
             Player.ArousalSettings.ProgressTimer = Player.ArousalSettings.Progress + 7;
-            ActivityChatRoomBCTArousalSync(Player);
             ActivityChatRoomArousalSync(Player);
+            if (Player.BCT) {
+                Player.BCT.splitOrgasmArousal.arousalProgress = 100;
+                Player.BCT.splitOrgasmArousal.ProgressTimer = Player.BCT.splitOrgasmArousal.arousalProgress + 50;
+                ActivityChatRoomBCTArousalSync(Player);
+            }
         }
     }
 
