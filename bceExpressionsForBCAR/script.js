@@ -705,9 +705,9 @@
 		Duration: 3000,
 		Priority: 250,
 		Expression: {
-			Eyes: [{ Expression: "Lewd", Duration: 3000 }],
-			Eyes2: [{ Expression: "Lewd", Duration: 3000 }],
-			Eyebrows: [{ Expression: "Harsh", Duration: 3000 }],
+			Eyes: [{ Expression: "Closed", Duration: 3000 }],
+			Eyes2: [{ Expression: "Closed", Duration: 3000 }],
+			Eyebrows: [{ Expression: "Soft", Duration: 3000 }],
 			Blush: [{ ExpressionModifier: 1, Duration: 3000 }],
 	                Mouth: [{ Expression: "Happy", Duration: 3000 }],
 			},
